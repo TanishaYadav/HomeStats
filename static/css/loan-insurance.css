@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    
+  }
+  
+  
+ 
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    
+  }
+
+
+
+  .topnav a {
+    float: left;
+    
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #fffefe;
+    color: rgb(0, 0, 0);
+  }
+  
+
+  .topnav a.active {
+    background-color: #d32722;
+    color: white;
+    
+  }
+
+
+.logo-name a{
+
+color: beige;
+font-family: 'Orbitron', sans-serif;
+
+
+}
+
+
+.logo-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+.container{
+
+}
+
+
+  .bg-color{
+    height: 2500px;
+    padding-top:1rem;
+    
+    background: linear-gradient(to top right ,#e44124,#ff9c07da);
+    z-index: -1;
+
+   
+  }
+
+h1{
+    
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+
+.content{
+    margin-left: 20%;
+    background: ivory;
+    width: 60%;
+    height: 2200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 3rem;
+   
+}
+
+p{
+    text-align: left;
+  color:rgb(68, 65, 65);
+  font-family: 'Hind', sans-serif;
+  font-size: 14px;
+
+}
+
+img{
+    width: 500px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+h3{
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+li{
+    color:rgb(68, 65, 65);
+    font-family: 'Hind', sans-serif;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+
+  }
+  

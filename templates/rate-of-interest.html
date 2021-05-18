@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="../static/css/rate-of-interest.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Merriweather+Sans:wght@500&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400&family=Orbitron:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Rate of Interest- HomeStats</title>
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="topnav">
+<div class="topnav">
+                <a href="{{ url_for('home') }}">Home</a>
+              <a   href="{{ url_for('calculators') }}">Calculators</a>
+              <a class="active"   href="{{ url_for('home_loan') }}">Home Loan</a>
+              <a  href="{{ url_for('legal_and_tax') }}">Legal and Tax</a>
+            <div   class= "logo-name" ><a href="{{ url_for('home') }}">HOME STATS</a></div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="bg-color">
+            <center><h1> Rate of Interest</h1></center> 
+
+            <div class="content">
+                <center><img src="{{url_for('static',filename = 'images/loan-eligible.jpg')}}" alt=""></center>
+                
+                <br>
+
+                <p>One of the major concerns while applying for a home loan is to choose between a fixed and flexible home loan rate. Let’s take a look at both the options.
+
+                </p>
+                <br>
+                <h3>Fixed Interest Rates
+
+                </h3>
+                <p>Fixed interest rates means that the rate of repaying the home loan is fixed for the entire loan tenure and does not change as per the market fluctuations. During the first few years of the home loan tenure, majority of the monthly payments are used to pay off the interest while the latter part of tenure is used to service the principal amount.
+
+                </p>
+                <br>
+
+                <table style="width:100%">
+                    <tr>
+                      <th>Benefits</th>
+                      <th>Drawbacks</th>
+                      
+                    </tr>
+                    
+                    <tr>
+                      <td>Independent of market conditions</td>
+                      <td>These are at least 1-2.5 percent higher than the floating rate of interest. Thus
+                        your EMI is higher if you opt for a fixed interest rate</td>
+                      
+                    </tr>
+
+                    <tr>
+                        <td>Better option for those who are good with budgeting and want
+                            a fixed monthly repayment schedule</td>
+                        <td>In case home loan rates decrease in the future, you do not get the
+                            benefit of the same. You will have to repay at the same rate you borrowed</td>
+                    </tr>
+                    <tr>
+                        <td>Brings in more security and certainty</td>
+                        <td>Some banks may charge a pre-payment penalty in case of a fixed rate
+                            of interest loan</td>
+                    </tr>
+                  </table>
+                  <br><br>
+
+                  <h3>Floating Interest Rates</h3>
+                  <p>Floating interest means that the rate changes as per the market conditions. Home loans with floating interest rates have a base rate plus a floating element. Thus if the base rate changes, the floating rate also changes. 
+
+                </p>
+                <br>
+                <br>
+
+                <table style="width:100%">
+                    <tr>
+                      <th>Benefits</th>
+                      <th>Drawbacks</th>
+                      
+                    </tr>
+                    
+                    <tr>
+                      <td>At the start of the loan, the rate of interest is lower than the fixed
+                        rate of interest</td>
+                      <td>Budgeting becomes cumbersome as your EMIs might keep changing
+                        depending upon the market conditions.</td>
+                      
+                    </tr>
+
+                    <tr>
+                        <td>It lets you take advantage of a downward trend in the market.
+                            Thus your EMI would go down if there is a drop in the home
+                            loan rates</td>
+                        <td>There is always a sense of uncertainty</td>
+                    </tr>
+                    <tr>
+                        <td>No penalty for pre-payment and thus you can save interest if you
+                            get additional funds during the tenure of the loan</td>
+                        <td>   </td>
+                    </tr>
+                  </table>
+                  <br>
+                  <br>
+                  <h3>Repo Rate Linked Rates</h3>
+                  <p>The Reserve Bank of India (RBI) introduced Repo Rate Linked Interest Rates for home loans from October 1. 2019, onwards. According to the circular issued by the RBI, home loan interest rates would now be directly linked to the Repo Rate set by the apex bank. For the borrowers, this would mean that now banks would have to restructure the interest rates after every monetary policy review and pass on the benefits offered by the central bank.     
+
+                </p>
+                <br>
+                <h3>So what to choose?</h3>
+                <p>Choosing between a floating and fixed interest rate is an individual decision. If you have kept yourself abreast with the projections of the financial market, it might be easier for you to choose between the two. In case there are projections of home loan rates softening, you should opt for a floating interest rate scheme. However, if budgeting and certainty about monthly expenses is a major concern, then you may opt for fixed rates.
+
+                </p>
+
+
+
+               </div>
+            </div>
+        </div>
+        
+        </body>
+        
+        </html>

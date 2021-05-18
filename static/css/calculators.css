@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    
+  }
+  
+  
+ 
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    
+  }
+
+
+
+  .topnav a {
+    float: left;
+    
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #fffefe;
+    color: rgb(0, 0, 0);
+  }
+  
+
+  .topnav a.active {
+    background-color: #d32722;
+    color: white;
+    
+  }
+
+
+.logo-name a{
+
+color: beige;
+font-family: 'Orbitron', sans-serif;
+
+
+}
+
+
+.logo-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+.container{
+
+}
+
+
+  .bg-color{
+    height: 750px;
+    padding-top:1rem;
+    
+    background: linear-gradient(to top right ,#e44124,#ff9c07da);
+    z-index: -1;
+
+   
+  }
+
+h1{
+    
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+  .cards{
+      
+      margin-left: 10%;
+        align-items: center;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .card{
+      
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 25%;
+      margin: 1rem;
+      background: ivory ;
+      height: 30rem;
+      overflow: hidden  ;
+      /* box-shadow: rgba(0, 0, 0, 0.15) 5px 10px 10px;  */
+      box-shadow: -8px 8px 3px 3px#1d1c1c8f;
+      transition: all 0.3s ease 0s;
+    }
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(-5px);
+}
+
+a{
+text-decoration:none;
+color:black;
+
+}
+
+  img{
+    width: 240px;
+    height: auto;
+    
+  }
+
+  .card-in{
+      display: flex;
+      padding: 1rem;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+  
+  p{
+     
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+      color: gray;
+  }
+

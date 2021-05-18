@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+
+  }
+
+  body{
+    
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+
+    
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+
+
+  .topnav a:hover {
+    background-color: #fffefe;
+    color: rgb(0, 0, 0);
+  }
+  
+  .topnav a.active {
+    background-color: #d32722;
+    color: white;
+  }
+
+.logo-name a{
+
+color: beige;
+font-family: 'Orbitron', sans-serif;
+
+
+}
+
+
+.logo-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+
+.container{
+
+}
+
+
+  .bg-color{
+    height: 1400px;
+    
+    
+    background: linear-gradient(to top right ,#e44124,#ff9c07da);
+    z-index: -1;
+
+   
+  }
+
+
+  .bg-img{
+    height: 100vh;
+    
+    background-image: url('grand house.jpg');
+    background-size: cover;
+    overflow: auto;
+    display: flex;
+    
+    
+  }
+
+  .glass{
+
+    padding-top: 2rem;
+    background: rgb(0, 0, 0);
+    min-height: 80vh;
+    width: 50%;
+    color: beige;
+    border-radius: 2rem;
+    z-index: 2;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;    position: absolute;
+    top: 75%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+  }
+
+h1{
+  font-size: 4rem;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 300;
+}
+
+  .form{
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around  ;
+    width: 50%
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 5px;
+
+  }
+
+  .area{
+    font-family: 'PT Sans', sans-serif;
+    outline: 0;
+    width: 100%;
+    height:2rem;
+    border: none;
+    border-radius: 2rem;
+    background: linear-gradient(to top right ,#fddba9,#f59140);
+    text-align: center;
+    line-height: 1rem;
+
+  }
+
+  .btnn{
+    outline: 0;
+    margin-top: 3rem;
+    border-radius: 100px;
+    background: linear-gradient(to top right ,#2883eb,#12172b);
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family:  Times New Roman;  
+    color: rgba(203, 235, 235, 0.705); 
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+
+.btnn:hover{
+    background-color:rgb(11, 8, 59) ;
+    color: beige;
+    
+    box-shadow: 0px 10px 10px rgba(33, 56, 90, 0.945);
+    
+    transform: translateY(-5px);
+}
+
+.result{
+  margin-top: 3rem;
+  width: 100%;
+  height:3rem;
+  border: none;
+  border-radius: 0rem;
+  background: ivory;
+  color: #12172b;
+  text-align: center;
+}
+
+.switch-field {
+	display: flex;
+	margin-bottom: 36px;
+	overflow: hidden;
+}
+
+.switch-field input{
+	position: absolute ;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label{
+	background-color: white;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(58, 55, 54, 0.3), 0 1px rgba(75, 63, 55, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover{
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: #fcac77;
+	box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}

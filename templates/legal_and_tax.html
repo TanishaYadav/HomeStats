@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/css/legal_and_tax.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Merriweather+Sans:wght@500&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400&family=Orbitron:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Legal and Tax </title>
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="topnav">
+
+           <a href="{{ url_for('home') }}">Home</a>
+              <a   href="{{ url_for('calculators') }}">Calculators</a>
+              <a    href="{{ url_for('home_loan') }}">Home Loan</a>
+              <a class="active" href="{{ url_for('legal_and_tax') }}">Legal and Tax</a>
+            <div   class= "logo-name" ><a href="{{ url_for('home') }}">HOME STATS</a></div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="bg-color">
+                
+           <center><h1>Legal & Tax </h1></center> 
+
+            <div class="cards">
+                <div class="card">
+
+                    <a href="{{ url_for('legal_and_tax_property_registration') }}">
+                        <img src="{{url_for('static',filename = 'images/real-estate.jpg')}}" class='card-in' alt="">
+                    <h3 class='card-in'  >Property Registration Process</h3>
+                    <p class='card-in' >Property registration is an integral part of the home buying process.
+                         Of all the steps involved in buying a property, registration is...</p>
+
+                    </a>
+                                    </div>
+                <div class="card">
+                    <a href="{{ url_for('legal_and_tax_taxes_involved') }}">
+                        <img src="{{url_for('static',filename = 'images/sale-rise.jpg')}}" class='card-in' alt="">
+                    <h3 class='card-in'  >Taxes involved</h3>
+                    <p class='card-in' >Are you aware of the legal aspects of investing in a property? Post the
+                        rollout of the Goods and Services Tax (GST), dynamics of to-be-levied taxes while buying  ...  </p>
+
+                    </a>
+                     </div>
+                <div class="card">
+                    <a href="{{ url_for('legal_and_tax_gst') }}">
+                        <img src="{{url_for('static',filename = 'images/gst.jpg')}}" class='card-in' alt="">
+                    <h3 class='card-in'  >All about GST </h3>
+                    <p class='card-in' >Major policy reforms introduced by the central government such as Real
+                        Estate (Regulation and Development) Act (RERA) 2016, and Housing for all saw the advent
+                         of a transparent and regulated real estate market in India this year. The biggest,..
+                          </p>
+                    </a>
+
+                </div>
+                <div class="card">
+                    <a href="{{ url_for('legal_and_tax_tax_benefits') }}">
+                        <img src="{{url_for('static',filename = 'images/tax.jpg')}}" class='card-in' alt="">
+                    <h3 class='card-in' > Tax benefits of Home Loan</h3>
+                    <p class='card-in' >Availing a home loan for buying a house not only helps improving your
+                         liquidity quotient but also endows you with tax benefits and rebates that can reduce your
+                          overall tax liability.
+                        Below are the tax benefits you can claim when you avail a home loan:...
+                    </p>
+                    </a>
+
+                </div>
+                <div class="card">
+                    <a href="{{ url_for('legal_and_tax_certificates') }}">
+                        <img src="{{url_for('static',filename = 'images/certificate.jpg')}}" class='card-in' alt="">
+                    <h3 class='card-in'  >Important Certificates</h3>
+                    <p class='card-in' >If you own a flat in a high-rise building or have booked a flat which is
+                        currently under construction, then you should be well aware about certain documents that
+                         accompany real estate
+                         .... </p>
+
+                    </a>
+                                    </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

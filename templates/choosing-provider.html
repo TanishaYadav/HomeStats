@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="../static/css/choosing-provider.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Merriweather+Sans:wght@500&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400&family=Orbitron:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Choosing Home Loan Provider- HomeStats</title>
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="topnav">
+                <a href="{{ url_for('home') }}">Home</a>
+              <a   href="{{ url_for('calculators') }}">Calculators</a>
+              <a class="active"   href="{{ url_for('home_loan') }}">Home Loan</a>
+              <a  href="{{ url_for('legal_and_tax') }}">Legal and Tax</a>
+            <div   class= "logo-name" ><a href="{{ url_for('home') }}">HOME STATS</a></div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="bg-color">
+            <center><h1> Choosing Home Loan Provider</h1></center> 
+
+            <div class="content">
+                <center><img src="{{url_for('static',filename = 'images/choosing-bank.jpg')}}" alt=""></center>
+                
+                <br>
+                <h3>Who can lend?</h3>
+                <p>The first option that comes to our mind when we think of financing our home purchase are loans from scheduled commercial banks. However, there are other ways to finance your home purchase. These include loans from Housing Finance Companies (HFCs) and Non-Banking Finance Companies (NBFCs) and mortgage loans. Let's take a look at these options individually:</p>
+                <br>
+                <h3>Scheduled Commercial Banks (SCBS)</h3>
+                <p>Scheduled Commercial Banks (SCBs) account for the maximum share of the housing loan portfolio in the housing finance market. This may be attributed to the large consumer base these banks enjoy. SCBs are governed by the Reserve Bank of India (RBI) and are of two types: Public Sector Banks and Private Sector Banks. Public Sector Banks are those in which maximum stake is held by the government while in a private sector bank majority of the stake is held by private individuals.
+
+                </p>
+                <br>
+
+                <h3>Housing Finance Companies (HFCs)</h3>
+                <p>Housing Finance Companies (HFCs), monitored by the National Housing Bank (NHB), are the second largest players in the housing finance market. Generally HFCs offer loans at a higher rate than SCBs. However, these can add stamp duty and registration charges in the loan amount which is not possible in the case of commercial banks. Thus, the customer base of HFCs are usually those who cannot pay a high down payment and thus need a higher loan amount. Those who do not get a loan from banks also approach HFCs. Home loan rates for some of the top HFCs in the country are mentioned below:
+
+                </p>
+                <br>
+                <br>
+
+                <center><img src="{{url_for('static',filename = 'images/bank-structure.png')}}" alt=""></center>
+                <br>
+
+                <h3>Choosing between a bank and a housing finance company</h3>
+                <p>So, how does one decide whether to take a home loan from a bank or a HFC? Well, unlike the common notion that borrowers approach a HFC only when rejected by a bank, taking a loan from a HFC can actually be better under certain circumstances. You may consider these points before choosing between a bank and a HFC:
+
+ 
+
+                    HFCs are best suited for someone who wants to borrow a higher amount of loan and wants to contribute less from his/her own pocket.
+                    
+                    As per RBI guidelines, SCBs are permitted to lend up to only 80 percent of the property value. This means the borrower has to pay at least 20 percent of the property value on his own. When the stamp duty and registration charges are added to the amount, the borrower ends up paying a hefty sum from his pocket.
+                    
+                    However, HFCs, regulated by the National Housing Bank (NHB), take into consideration the stamp duty and registration cost while calculating the total cost of the property. In a country where these charges can be as high as 6-8 percent, this can make a lot of difference.
+                    
+                    HFCs are also flexible when it comes to evaluating business income, eligibility, and credit scores.
+                    
+                    On the other hand, if you take a home loan from a bank and maintain a relationship, getting other loans and products becomes easier.
+                    
+                     </p>
+                     <br>
+                     <h3>Floating vs Fixed rate of interest</h3>
+                     <p>One of the major concerns while applying for a home loan is to choose between a fixed and flexible home loan rate. Let’s take a look at both the options.
+
+                    </p>
+                    <br>
+                    <h3>Fixed Interest Rates</h3>
+                    <p>Fixed interest rates means that the rate of repaying the home loan is fixed for the entire loan tenure and does not change as per the market fluctuations. During the first few years of the home loan tenure, majority of the monthly payments are used to pay off the interest while the latter part of tenure is used to service the principal amount.</p>
+                    <br>
+
+                    <h3>Floating Interest Rates</h3>
+                    <p>Floating interest means that the rate changes as per the market conditions. Home loans with floating interest rates have a base rate plus a floating element. Thus, if the base rate changes, the floating rate also changes. </p>
+                    <br>
+                    <h3>So what to choose?</h3>
+                    <p>Choosing between a floating and fixed interest rate is an individual decision. If you have kept yourself abreast with the projections of the financial market, it might be easier for you to choose between the two. In case there are projections of home loan rates softening, you should opt for a floating interest rate scheme. However, if budgeting and certainty about monthly expenses is a major concern for you, then you may opt for fixed rates.
+
+                    </p>
+
+                </div>
+    </div>
+</div>
+
+</body>
+
+</html>

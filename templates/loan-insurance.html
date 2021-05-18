@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="../static/css/loan-insurance.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Merriweather+Sans:wght@500&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400&family=Orbitron:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Home Loan Insurance- HomeStats</title>
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="topnav">
+
+             <div class="topnav">
+                <a href="{{ url_for('home') }}">Home</a>
+              <a   href="{{ url_for('calculators') }}">Calculators</a>
+              <a class="active"   href="{{ url_for('home_loan') }}">Home Loan</a>
+              <a  href="{{ url_for('legal_and_tax') }}">Legal and Tax</a>
+            <div   class= "logo-name" ><a href="{{ url_for('home') }}">HOME STATS</a></div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="bg-color">
+            <center><h1> Choosing Home Loan Provider</h1></center> 
+
+            <div class="content">
+                <center><img src="{{url_for('static',filename = 'images/home-insurance.jpg')}}" alt=""></center>
+                
+                <br>
+                <p>For the salaried Indian, buying a home is a necessary but highly expensive affair, compelling them to opt for a home loan. Even if you are confident that you will be able to pay off the loan amount, there are several uncertainties that can hinder the course of payment, such as death, disease, disability and unemployment.
+
+                </p>
+                <br>
+                <p>Getting your home loan insured helps you repay the outstanding loan amount, even during trying times when there is a possibility that you may lose your home. The financial institution usually provides the insurance plan, also known as Home Loan Protection Plan (HLPP), bundled with the home loan. Although the Reserve Bank of India bars financial institutions from bundling other products with home loans to make a profit, you must ask for it for your own good.
+
+                </p><br>
+
+                <h3>Types of home loan insurance:</h3>
+                <p>Home loan providers offer three types of home loan insurance plans:</p>
+                <br>
+                <ul>
+                    <li><p> <b>Level Cover Plan: </b>In this plan, the coverage remains the same throughout the tenure of the loan for the beneficiary</p></li><br>
+                    <li><p> <b>Reducing Cover Plan: </b>  The coverage, as well as the outstanding loan, reduces as the term progresses</p></li><br>
+                    <li><p> <b>Hybrid Cover Plan:  </b>This provides full coverage for the first year and then starts declining as the balance amount decreases with the tenure</p></li><br>
+                </ul>
+                <br>
+                <h3>Features of home loan insurance
+
+                </h3>
+                <p>Under home loan insurance or HLPP, the insurance provider settles pending loan amounts with banks or financial institutions, in case of the borrower’s untimely demise. There are additional covers for disease and disability. Some features of home loan insurance are:
+
+                </p>
+                <br>
+                <p><b>Pay off the home loan:</b> A lump sum amount is transferred to the beneficiary by the home loan insurance provider, which can be used to pay off outstanding home loan charges.   </p>
+                <p><b>Policy lapse:</b>In the case of the transfer of the home loan balance, restructuring of the loan policy or if the loan amount has been paid in full, the insurance policy could lapse.
+
+                </p><br>
+                <p><b>Tax benefits: </b>The borrower can avail tax benefits on the premium paid for the home loan insurance under section 80C of the Income Tax Act (ITA).
+
+                </p><br>
+                <p><b>Joint loan option: </b>    If you opt for a joint loan, only a single home loan insurance cover is required for multiple borrowers.
+
+                </p><br>
+                <p><b>Extra cover: </b> Some home loan insurance policies provide extra cover through rider policies for disease and disability, by paying extra premium.
+
+                </p><br>
+                <h3>Term insurance – alternative to home loan insurance</h3>
+                <p>Term insurance is a less expensive alternative to home loan insurance. Term insurance policies can provide cover for many liabilities, which can include home loan as well. Those who have already availed for a term insurance policy can get the cover extended when they plan to apply for a home loan, instead of getting a separate home loan insurance.
+
+ 
+
+                    Let us see how the term insurance compares with home loan insurance:
+                    
+                     </p><br>
+                     <p><b>Premium cost: </b>The annual premium for a term insurance plan of Rs 1 crore costs around Rs 10,000 to Rs 15,000. At the same time, the extra cover for home loan insurance would cost you a premium amount of around Rs 50,000.</p>
+                     <br>
+                     <p><b>Life cover:</b>Financial institutions provide special term insurance plans which offer maturity benefits if the person outlives the duration of the plan, and death benefit, which can easily repay the home loan. But, in case of HLPP, if the insurance amount gets paid in full, its life cover will decline gradually to zero as the term ends.
+
+                     </p><br>
+                     <p><b>Modifying the cover: </b> When it comes to the term plan as a life cover, the beneficiary is allowed to increase or modify the cover based on their financial needs. But, since you already pay the premium of the HLPP at the beginning of the term, the plan cannot be modified.
+
+                     </p>
+                     <br>
+                     <p><b>Premium calculation:</b>The interest calculated on the home loan insurance includes the premium amount as well as the loan amount. In the case of term insurance, the interest is only calculated based on the premium amount.</p>
+                     <br><br>
+
+                     <table style="width:100%">
+                        <tr>
+                          <th>Benefits</th>
+                          <th>Drawbacks</th>
+                          
+                        </tr>
+                        
+                        <tr>
+                          <td>Smaller premium amount</td>
+                          <td>You will be paying more premium for extra cover</td>
+                          
+                        </tr>
+    
+                        <tr>
+                            <td>Death benefit which can help pay off debts and home loan</td>
+                            <td>Life cover will decline to zero as the loan is paid off gradually</td>
+                        </tr>
+                        <tr>
+                            <td>You can modify or increase the cover based on your requirements</td>
+                            <td> Plan cannot be modified as premium is paid at the beginning of the plan  </td>
+                        </tr>
+                        <tr>
+                            <td>Interest is only calculated based on premium amount</td>
+                            <td> Interest is calculated on the sum of the premium and the loan amount </td>
+                        </tr>
+                        <tr>
+                            <td>You can change your home loan lender without having to forego the premium amount</td>
+                            <td> You have to stick to one lender as you pay the premium at the beginning of the plan  </td>
+                        </tr>
+                      </table>
+                      <br>
+                      <br>
+
+                      <p>The term insurance policy covers all liabilities, whereas, the HLPP has a high premium, additional commission, and reducing cover. It is best that you weigh all the pros and cons of both the plans and choose the one that covers the loan amount as well as other unexpected liabilities that may come up in the future.
+
+                    </p>
+
+
+
+               </div>
+            </div>
+        </div>
+        
+        </body>
+        
+        </html>

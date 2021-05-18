@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="../static/css/loan-eligibility.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Merriweather+Sans:wght@500&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400&family=Orbitron:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Home Loan Eligibilty- HomeStats</title>
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="topnav">
+  <a href="{{ url_for('home') }}">Home</a>
+              <a   href="{{ url_for('calculators') }}">Calculators</a>
+              <a class="active"   href="{{ url_for('home_loan') }}">Home Loan</a>
+              <a  href="{{ url_for('legal_and_tax') }}">Legal and Tax</a>
+            <div   class= "logo-name" ><a href="{{ url_for('home') }}">HOME STATS</a></div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="bg-color">
+            <center><h1> Home Loan Eligibilty</h1></center> 
+
+            <div class="content">
+                <center><img src="{{url_for('static',filename = 'images/loan-eligible.jpg')}}" alt=""></center>
+                
+                <br>
+                <p>Applying for a home loan is probably the most common form of funding sought by those planning a home purchase. Banks usually sanction home loans up to 60 times your net monthly take home salary. However, your home loan eligibility depends on numerous factors including your monthly income, obligations, age, expenditures and number of dependents, among others. Let’s look at the factors in details.
+
+                </p><br>
+                <h3>Source of Income:</h3>
+                <p>Source of income or the type of profession is a key factor banks consider before sanctioning a home loan. People with a stable income employed in sectors such as banking, aviation, government service, information technology are given preference. This is associated with their healthy repayment ability as compared to those who are self-employed or running a business. Also, if you have been a job hopper in the past, your home loan eligibility is adversely impacted.
+
+                </p>
+                <br>
+                <h3>Salary Structure:</h3>
+                <p>Your income is perhaps the most important factor determining your home loan eligibility. Higher the income, better are your chances of repaying the liability to the bank or financial institution. Furthermore, your salary structure plays a crucial role in this. Banks do not consider your gross salary but the net or in hand salary to calculate the eligibility. Thus, a salary structure that pays you more allowances than your in-hand salary might be helping you save taxes but is not conducive to borrowing. Most banks deduct leave travel allowance (LTA), house rent allowance (HRA), medical allowances and all other types of allowances from your annual salary before computing your monthly take-home figure. The bank also reviews the number of dependents you have and what portion of your monthly income goes towards taking care of their requirements. Thus, irrespective of your gross income, the bank would consider the amount against which you have filed the Income Tax Return (ITR) in the last 2-3 years.</p>
+                <br>
+                <h3>Age: </h3>
+                <p>When it comes to home loans, age matters! Most banks are more likely to lend money to people aged below 58 years. This is because banks prefer ending the home loan tenure by the time you retire. So, if you are nearing 50 years, your bank would only grant you a re-payment tenure of six to eight years. On the other hand, if you are 35 years, your re-payment tenure can easily be extended up to 20 years.
+
+                </p>
+                <br>
+                <h3>Liabilities:</h3>
+                <p>Ideally, if you are seeking a home loan, your liabilities (including EMIs for other loans taken, credit card payments, etc.) should not exceed 55-60 percent of the monthly income. Such expenses impact your liquidity and repayment ability.
+
+                    Furthermore, banks refer to the database maintained by Credit Information Bureau of India Ltd (CIBIL) to ascertain your credit history. A CIBIL report details your dues including any defaults you have made while repaying any loans or advances/overdrafts. Credit card dues are also reflected in the report.
+                    
+                     </p>
+                     <br>
+                     <h3>Being a guarantor:</h3>
+                     <p>If you stand as a guarantor for someone’s loan, banks consider it as your liability since the failure of the primary borrower to repay the loan amount would make you liable to repay the remaining amount. Hence, higher the number of loans a person guarantees, lower is his home loan eligibility.
+
+                    </p>
+                    <br>
+                    <h3>Relationship with the co-borrower/s:</h3>
+                    <p>Co-borrowing can help you get a larger loan amount since both parties' incomes and credit history are taken into account when qualifying for the loan. You may co-borrow with your spouse, parent, any other family member or even a friend. However, banks are often skeptical about offering loan in case of brothers, step-siblings or recently married couple due to probability of a tiff or split between the two.
+
+                    </p>
+                    <br>
+
+
+
+
+
+               </div>
+            </div>
+        </div>
+        
+        </body>
+        
+        </html>

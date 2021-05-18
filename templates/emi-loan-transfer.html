@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="static/css/emi-loan-transfer.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Merriweather+Sans:wght@500&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;200;300;400&family=Orbitron:wght@500&display=swap"
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+
+    <title>Loan Transfer Calculator- HomeStats</title>
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="topnav">
+
+             <a href="{{ url_for('home') }}">Home</a>
+              <a  class="active"   href="{{ url_for('calculators') }}">Calculators</a>
+              <a    href="{{ url_for('home_loan') }}">Home Loan</a>
+              <a href="{{ url_for('legal_and_tax') }}">Legal and Tax</a>
+            <div   class= "logo-name" ><a href="{{ url_for('home') }}">HOME STATS</a></div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="bg-color">
+            <center><h1> Loan Transfer Calculator</h1></center> 
+
+            <div class="content">
+               
+                
+                <div class="top-content">
+                    <div class="curr-loan">
+
+                        
+    
+                        
+                        <h3 class='curr-items'>Current Loan</h3>
+                            <div>
+                                <h4 class='curr-items'>Loan Amount </h4>
+                                <input class='curr-items' type=number id="principal_loan">
+                                
+                            </div>
+                            <div>
+                                <h4 class='curr-items'>Rate Of Interest </h4>
+                                <input class='curr-items' type="number" id='curr_rate'>
+                                
+                            </div>
+                            <div>
+                                <h4 class='curr-items'>Installments Paid </h4>
+                                <input class='curr-items' type="number" id='installments_paid'>
+                                
+                            </div>
+                            <div>
+                                <h4 class='curr-items'>Tenure (in years)</h4>
+                                <input class='curr-items' type="number" id = 'curr_years'>
+                            </div>
+    
+                        
+                    </div>
+    
+    
+                    <div class="new-loan">
+                        <h3 class='new-items'>New Loan</h3>
+    
+                        
+                            <div>        
+                                <h4 class='new-items'>Processing Fees</h4>
+                                <input class='new-items' type="number" id='processing_fees'>
+                             </div>
+                            <div>
+                                <h4 class='new-items'>Rate of Interest</h4>
+                                <input class='new-items' type="number" id = 'new_rate'>
+                                
+                            </div>
+                            <div>
+                                <h4 class='new-items'>Tenure (in years)</h4>
+                                <input class='new-items' type="number"id = 'new_years'>
+                            </div>
+    
+                      
+    
+                    </div>        
+                      
+    
+                </div>
+
+
+                <center><button class="submit btnn"  id = "find" type="button">Compare</button></center><br>
+
+
+
+                <div class="bottom-content">
+
+                    <div class="bottom-items">
+
+                        <div class="bottom-curr">
+                            <div class = 'curr-items'>
+                                <h3>Current Loan</h3>
+                            </div>
+                            <div class = 'curr-items'>
+                                <h4>Total Interest</h4>
+                                <input type="text" id = 'curr_total_interest'>
+                            </div>
+                            <div class = 'curr-items'>
+                                <h4>EMI Tenure (in years) </h4>
+                                <input type="text" id = 'curr_yrs'>
+                            </div>
+                            <div class = 'curr-items'>
+                                <h4>EMI </h4>
+                                <input type="text" id = 'curr_emi'>
+                            </div>
+
+                        </div>
+
+                        <div class="bottom-new">
+                            <div class = 'curr-items'>
+                            <h3>New Loan</h3>
+
+                            </div>
+                            <div class = 'curr-items'>
+                                <h4>Total Interest</h4>
+                                <input type="text" id = 'new_total_interest'>
+                            </div>
+                            <div class = 'curr-items'>
+                                <h4>EMI Tenure (in years) </h4>
+                                <input type="text" id = 'new_yrs'>
+                            </div>
+                            <div class = 'curr-items'>
+                                <h4>EMI </h4>
+                                <input type="text" id = 'new_emi'>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <center> <div>
+
+                        <h4>Outstanding Principal </h4>
+                        <input type="text" id = 'outstanding_principal'>
+                        <br><br><br>
+                        <div class="savings" > <span id = 'saving'>              </span> </div>
+                    </div>
+                    </center>
+
+                    
+
+
+                    </div>
+                    
+
+                    
+                    
+                </div>
+
+
+                
+
+               </div>
+            </div>
+        </div>
+
+
+
+        <script src='static/js/emi-loan-transfer.js'> </script>
+        
+        </body>
+        
+        </html>

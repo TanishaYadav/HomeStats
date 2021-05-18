@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../static/css/home_loan.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Merriweather+Sans:wght@500&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400&family=Orbitron:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Home Loan - HomeStats</title>
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="topnav">
+            <a href="{{ url_for('home') }}">Home</a>
+              <a   href="{{ url_for('calculators') }}">Calculators</a>
+              <a class="active"   href="{{ url_for('home_loan') }}">Home Loan</a>
+              <a  href="{{ url_for('legal_and_tax') }}">Legal and Tax</a>
+            <div   class= "logo-name" ><a href="{{ url_for('home') }}">HOME STATS</a></div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="bg-color">
+                
+           <center><h1> Home Loan</h1></center> 
+
+            <div class="cards">
+                <div class="card">
+                    <a href = "{{ url_for('home_loan_process') }}">
+                        <img src="{{url_for('static',filename = 'images/loan-process.jpg')}}" class='card-in' alt="">
+                    <h3 class='card-in'  >Home Loan Process</h3>
+                    <p class='card-in' >The procedure for a home loan begins with a formal application
+                         to the bank. In addition to the application, you are required to provide your
+                         personal details for the bank to scrutinize and to assess your loan eligibility.
+                          Most banks will ask you for the following documents:  </p>
+                    </a>
+
+                </div>
+                 <div class="card">
+
+                     <a href="{{ url_for('home_loan_loan_eligibility') }}">
+                        <img src="{{url_for('static', filename = 'images/con-pros.png')}}" class='card-in' alt="">
+                    <h3 class='card-in'  >Home Loan Eligibility</h3>
+                    <p class='card-in' >Applying for a home loan is probably the most common form of funding sought by those
+                        planning a home purchase. Banks usually sanction home loans up to 60 times your net monthly take home
+                        salary. However .... </p>
+                    </a>
+
+                </div>
+
+                <div class="card">
+
+                     <a href="{{ url_for('home_loan_rate_of_interest') }}">
+                        <img src="{{url_for('static',filename = 'images/loan-eligible.jpg')}}" class='card-in' alt="">
+                    <h3 class='card-in'  >Rate of Interest </h3>
+                    <p class='card-in' >One of the major concerns while applying for a
+                        home loan is to choose between a fixed and flexible home loan rate. Here we'll
+                        try to solve that problem of yours with our detailed research through data analysis over the
+                        data collected through various sources.
+                          </p>
+                    </a>
+
+                </div>
+                <div class="card">
+
+                     <a href="{{ url_for('home_loan_loan_insurance') }}">
+                        <img src="{{url_for('static', filename = 'images/home-insurance.jpg')}}" class='card-in' alt="">
+                    <h3 class='card-in'  >Home Loan Insurance</h3>
+                    <p class='card-in' >For the salaried Indian, buying a home is a necessary but highly expensive affair,
+                         compelling them to opt for a home loan. Even if you are confident that you will be able to pay off
+                         the loan amount, there are sev....
+
+
+
+                    </p>
+                    </a>
+
+                </div>
+               <div class="card">
+
+                    <a href="{{ url_for('home_loan_choosing_provider') }}">
+                        <img src="{{url_for('static',filename = 'images/choosing-bank.jpg')}}" class='card-in' alt="">
+                    <h3 class='card-in'  >Choosing a Loan Provider</h3>
+                    <p class='card-in' >The first option that comes to our mind when we think of financing
+                        our home purchase are loans from scheduled commercial banks. However, there are other
+                         ways to finance your home purchase. These include loans from Housing Finance Companies
+                          (HFCs) ...  </p>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

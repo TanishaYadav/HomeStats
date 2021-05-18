@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeStats - Price & Emi Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="static/css/emi_style.css" type="text/css">
+     <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400&family=Orbitron:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+  <nav>
+    <div class="topnav">
+         <a href="{{ url_for('home') }}">Home</a>
+              <a  class="active"   href="{{ url_for('calculators') }}">Calculators</a>
+              <a    href="{{ url_for('home_loan') }}">Home Loan</a>
+              <a href="{{ url_for('legal_and_tax') }}">Legal and Tax</a>
+            <div   class= "logo-name" ><a href="{{ url_for('home') }}">HOME STATS</a></div>
+
+      </div>
+
+</nav>
+
+  <div class="price"><h1><center>The Estimated Price is </center></h1>
+          <br>
+          <div class="est_price"><h1><center>
+
+                {{priceRs}}
+          </center></h1></div>
+  </div>
+
+  <div class="container" style="display: flex; margin-top: 10%;">
+ 
+  
+
+    
+
+
+
+      <div class="col-sm-5 col-12pl-3 card">
+
+          <h1>Results</h1><br/>
+          <h3>Total EMI:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="emi"></span></h3>
+          <h3>Total Amount: &nbsp;&nbsp;&nbsp;&nbsp;<span id="totalAmt"></span></h3>
+          <h3>Total Interest:&nbsp;&nbsp;&nbsp;&nbsp;<span id="totalInt"></span></h3>
+          <div id="chartContainer" class = 'pie' style="height: 300px; width: 100%;">  </div>
+
+        </div>
+
+
+
+        <div class="col-sm-6 col-12 card" >
+          <H1>EMI Calculator</H1>
+          <form name="loan-form">
+          <div class='loanBlock'>
+              <h3>Loan Amount</h3>
+              <input type=number  value = "{{price}}" id="amount" style="border-radius:5px"><br>
+          </div>
+           <div class='aprBlock'>
+              <h3>Interest Rate</h3>
+              <input type="number" name="apr" id="apr" style="border-radius:5px"><br>
+           </div>
+            <div class='tenureBlock'>
+            <h3>Time Periods(yrs)</h3>
+           <input type=number name="tenure" id="tenure" style="border-radius:5px"><br>
+           <br>
+            </div>
+            <div class="d-flex">
+          <button style="border-radius:2px" id="find" class="btn">Find EMI</button>
+            </div>
+          </form>
+         
+         
+          
+        </div>
+           
+  </div>
+
+
+  
+
+  <script src='static/js/emi.js'> </script>
+  <script>
+   
+    </script>
+</body>
+</html>

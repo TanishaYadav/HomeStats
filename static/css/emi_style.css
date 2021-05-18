@@ -1,0 +1,171 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+     /* align-items: center;
+    justify-content: center;
+    align-content: center;  */
+    background: linear-gradient(to top right ,#e44124,#ff9c07da);
+  }
+
+
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #fffefe;
+    color: rgb(0, 0, 0);
+  }
+
+
+
+.container{
+    padding: 5rem 5rem;
+}
+
+
+.price{
+    margin-top: 10rem;
+    height: 50%;
+    color: aliceblue;
+    width: 100%;
+    background-color: black;
+}
+
+  input{
+    width: 80%;
+    height: 40px;
+    color: black;
+    outline: none;
+
+  }
+
+
+
+
+  .card{
+    background-color: #000000;
+    margin: 2rem 2rem;
+    box-shadow: -10px 10px 5px 5px#1d1c1c8f;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+     color: white;
+  }
+  h1{
+    text-align: center;
+  }
+  .option{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  label{
+    color:  #F0A384;
+
+  }
+  .password-result{
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+.pie{
+    height: 100%;
+    width: 80%;
+
+}
+
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-name a{
+
+color: beige;
+font-family: 'Orbitron', sans-serif;
+
+
+}
+.topnav a.active {
+    background-color: #d32722;
+    color: white;
+  }
+
+.logo-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+
+  .btn{
+    outline: 0;
+    margin-top: 3rem;
+
+    background: linear-gradient(to top right ,#2883eb,#12172b);
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family:  Times New Roman;
+    color: rgba(203, 235, 235, 0.705);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 2rem
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover{
+    background-color:rgb(11, 8, 59) ;
+    color: beige;
+    background: linear-gradient(to top right ,#1d97fc,#0f1222);
+
+    box-shadow: 0px 10px 10px rgba(33, 56, 90, 0.945);
+
+    transform: translateY(-5px);
+}
+
+  /* .btn-sub{
+    background-color: #181934;
+    color:  #fff;
+    border: 0;
+    padding: 10px 30px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    border: 1px solid white;
+    display: flex;
+    margin: auto;
+    font-weight: bolder;
+
+  } */
+  .button{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    font-weight: bolder;
+  }
+  @media only screen and (min-width: 768px){
+    .card{
+      width: 100%;
+    }
+
+  }

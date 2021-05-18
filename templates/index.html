@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400&family=Orbitron:wght@500&display=swap" rel="stylesheet">    <title>HomeStats</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../static/js/javascript.js"></script>
+
+
+    <title>HomeStats</title>
+</head>
+
+
+<body>
+    
+<nav>
+    <div class="topnav">
+        <a class="active" href="{{ url_for('home') }}">Home</a>
+          <a   href="{{ url_for('calculators') }}">Calculators</a>
+          <a  href="{{ url_for('home_loan') }}">Home Loan</a>
+          <a  href="{{ url_for('legal_and_tax') }}">Legal and Tax</a>
+        <div   class= "logo-name" ><a href="{{ url_for('home') }}">HOME STATS</a></div>
+
+<!--        <a class= 'logo' href="#logo"><h3>HomeStats</h3></a>-->
+      </div>
+
+</nav>
+
+<div class="container">
+
+    <div class="bg-color">
+
+        <div class="bg-img"> </div>
+
+            <div class="glass">
+
+                <h1> Welcome!   </h1>
+
+            <form class="form" name="form" method = 'POST' action = '{{url_for('home')}}'>
+                
+                <h2 class='content' >Area (Square Feet)</h2>
+                <input class="area"  type="text"     class="floatLabel" name="total_sqft" value="1000">
+    <!--                <h2 class='content'>Price per Sq. feet</h2>-->
+    <!--                <input class="area"  type="text"  class="floatLabel" name="price_per_sqft" value="16000">-->
+
+    <!--                <h2 class='content'>Balcony</h2>-->
+    <!--                <input class="area"  type="text"  class="floatLabel" name="balcony" value="1">-->
+
+                <h2 class='content'>BHK</h2>
+                <div class="switch-field ">
+                    <input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+                    <label for="radio-bhk-1">1</label>
+                    <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+                    <label for="radio-bhk-2">2</label>
+                    <input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+                    <label for="radio-bhk-3">3</label>
+                    <input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+                    <label for="radio-bhk-4">4</label>
+                    <input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+                    <label for="radio-bhk-5">5</label>
+                </div>
+                
+            
+                <h2 class = 'content'>Bath</h2>
+                <div class="switch-field ">
+                    <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+                    <label for="radio-bath-1">1</label>
+                    <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+                    <label for="radio-bath-2">2</label>
+                    <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+                    <label for="radio-bath-3">3</label>
+                    <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+                    <label for="radio-bath-4">4</label>
+                    <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+                    <label for="radio-bath-5">5</label>
+                </div>
+                    <h2 class = 'content'>Location</h2>
+                <div class='area'>
+            <select class="location area" name="location" id="uiLocations">
+
+            <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                {% for server in servers %}
+             <option value="{{ server}}">{{ server}}</option>
+                {% endfor %}
+<!--                    <option>Electronic City</option>-->
+<!--                    <option>Rajaji Nagar</option>-->
+            </select>
+                </div>
+<!--                <button class="submit content btnn" type="button">Estimate Price</button>-->
+                <input class = 'content btnn' type = 'submit', value = 'Estimated Price'>
+<!--                <a href='/predict_home_price' class="content btnn"> Estimated Price</a>-->
+<!--                <div id="uiEstimatedPrice"  class="result content">	<h2>     {{price}}      </h2> </div>-->
+            </form>
+        </div>
+    </div>
+    
+
+</div>
+
+
+</body>
+</html>

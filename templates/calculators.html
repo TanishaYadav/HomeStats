@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/calculators.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Merriweather+Sans:wght@500&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400&family=Orbitron:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Calculators - HomeStats</title>
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="topnav">
+
+            <a href="{{ url_for('home') }}">Home</a>
+              <a  class="active"   href="{{ url_for('calculators') }}">Calculators</a>
+              <a    href="{{ url_for('home_loan') }}">Home Loan</a>
+              <a href="{{ url_for('legal_and_tax') }}">Legal and Tax</a>
+            <div   class= "logo-name" ><a href="{{ url_for('home') }}">HOME STATS</a></div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="bg-color">
+                
+           <center><h1> Calculators</h1></center> 
+
+            <div class="cards">
+                
+                <div class="card">
+                     <a href="{{ url_for('calculators_emi_loan_transfer') }}">
+                    <img src="{{url_for('static',filename = 'images/emi-loan-transfer.jpg')}}" class='card-in' alt="">
+                    <h3 class='card-in'  >Loan Transfer Calculator</h3>
+                    <p class='card-in' >After paying few installments of your home loan if you find
+                        a new loan scheme which seems to be more favourable but you not sure about it.
+                    Compare it now, with our loan transfer calculator. </p>
+                     </a>
+                </div>
+
+                <div class="card">
+                   <a href="{{ url_for('calculators_emi_calculator') }}">
+                    <img src="{{url_for('static',filename = 'images/emi-calculator.png')}}" class='card-in' alt="">
+                    <h3 class='card-in'  >Calculate EMI</h3>
+                    <p class='card-in' >Know what will be your monthly EMI, based in the amount of Loan
+                        you have opted for the given tenure. Also know the total interest along with 
+                    total amount to be paid  </p>
+                        </a>
+                </div>
+
+                <div class="card">
+                    <a href="{{ url_for('calculators_monthly_repayment') }}">
+                    <img src="{{url_for('static',filename = 'images/loan-transfer-monthly.jpg')}}" class='card-in' alt="">
+                    <h3 class='card-in'  >Monthly Repayment of Loan </h3>
+                    <p class='card-in' >It will let you know about your current loan amount left
+                        to be paid, interest to be paid, loan amount already paid, running EMI etc.
+                          </p>
+                         </a>
+                </div>
+                
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
